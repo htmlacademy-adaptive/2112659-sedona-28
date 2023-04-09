@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-adaptive.github.io/2112659-sedona-28/2/">
+</head>
+
+  <body class="page-body">
+
+    <header class="main-header">
+
+      <a class="main-header__logo" href="">
+        <img class="logo-image" src="/source/img/logo.svg" alt="Логотип Седоны." width="185px" height="96px">
+      </a>
+
+      <nav class="main-nav">
+
+        <div class="main-nav__wrapper">
+
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <ul class="main-nav__list site-list">
+
+            <li class="site-list__item">
+              <a class="nav-link" href="../index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="nav-link" href="../source/catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="nav-link" href="../source/form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="nav-link" href="www.htmlacademy.ru">
+                HTML ACADEMY
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main class="main-container">
+
+      <div class="intro-pages">
+        <div class="intro-pages__big-image">
+          <img class="intro-pages__imaged-text" src="/source/img/hero-text2.svg" alt="Текст на фото.">
+        </div>
+        <div class="intro-pages__text text-block">
+          <p class="text-block__title page-title">
+            Оставьте свой отзыв
+          </p>
+          <p class="text-block__subtitle page-subtitle">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+      </div>
+
+      <div class="survey">
+
+        <form class="survey__wrapper">
+
+          <div class="survey__names names">
+
+            <p class="names__title page-title">
+              Представьтесь:
+            </p>
+
+            <label class="names__type-text page-subtitle page-subtitle--small" for="person-name">
+              ИМЯ*:
+            </label>
+
+            <input class="names__field" name="person-name" id="person-name" type="text" placeholder="Пётр">
+
+            <label class="names__type-text page-subtitle page-subtitle--small" for="person-surname">
+              ФАМИЛИЯ*:
+            </label>
+
+            <input class="names__field" name="person-surname" id="person-surname" type="text" placeholder="Пустота">
+
+            <label class="names__type-text page-subtitle page-subtitle--small" for="person-father-name">
+              Отчество:
+            </label>
+
+            <input class="names__field" name="person-father-name" id="person-father-name" type="text" placeholder="Викторович">
+
+          </div>
+
+          <div class="survey__contacts contacts">
+
+            <p class="contacts__title page-title">
+              Контактная информация:
+            </p>
+
+            <div class="contacts__field-wrapper">
+
+              <label class="contacts__type-text page-subtitle page-subtitle--small" for="phone-number">
+                Контактный телефон*:
+              </label>
+
+              <input class="contacts__field" name="phone-number" id="phone-number" type="phone" placeholder="Введите телефон">
+
+              <div class="contacts__pic">
+                <span class="visually-hidden">Значок трубки</span>
+              </div>
+
+            </div>
+
+            <div class="contacts__field-wrapper">
+
+              <label class="contacts__type-text page-subtitle page-subtitle--small" for="email">
+                Электронная почта*:
+              </label>
+
+              <input class="contacts__field" name="email" id="email" type="email" placeholder="Введите e-mail">
+
+              <div class="contacts__pic">
+                <span class="visually-hidden">Значок письма</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="survey__feedback feedback">
+
+            <p class="feedback__title page-title">
+              ВАше Общее впечатление:
+            </p>
+
+            <input class="feedback__point" type="radio" name="opinion" id="good" checked>
+
+            <label class="feedback__point-name" for="good">Скорее положительное</label>
+
+            <input class="feedback__point" type="radio" name="opinion" id="bad">
+
+            <label class="feedback__point-name" for="bad">Скорее отрицательное</label>
+
+            <input class="feedback__point" type="radio" name="opinion" id="dunno">
+
+            <label class="feedback__point-name" for="dunno">Затрудняюсь ответить</label>
+
+          </div>
+
+          <div class="survey__visited-places places">
+
+            <p class="places__title page-title">
+              посещенные достопримечательности:
+            </p>
+
+            <input class="places__point" type="checkbox" name="locations" id="devils-bridge" checked>
+
+            <label class="places__point-name" for="devils-bridge">Мост Дьявола</label>
+
+            <input class="places__point" type="checkbox" name="locations" id="bell-mtn" checked>
+
+            <label class="places__point-name" for="bell-mtn">Гора-Колокол</label>
+
+            <input class="places__point" type="checkbox" name="locations" id="slide-park" checked>
+
+            <label class="places__point-name" for="slide-park">Слайд-парк</label>
+
+            <input class="places__point" type="checkbox" name="locations" id="red-cliffs">
+
+            <label class="places__point-name" for="red-cliffs">Красные скалы</label>
+
+          </div>
+
+          <div class="survey__emotions emotions">
+
+            <p class="emotions__title page-title">
+              Опишите свои эмоции:
+            </p>
+
+            <textarea class="emotions__free-text" name="emotions-text" id="emotions-text" cols="25" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+
+          </div>
+
+          <button class="survey__send-btn blue-btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+
+          <small class="survey__mandatory-fields page-subtitle page--smallest">* — обязательные поля</small>
+
+        </form>
+
+      </div>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <p class="main-footer__hashtag page-title">
+          #visitSEDONA
+        </p>
+
+        <div class="main-footer_socials socials">
+          <a class="socials__link" href="">ВК</a>
+          <a class="socials__link" href="">Телега</a>
+          <a class="socials__link" href="">ЮТ</a>
+        </div>
+
+        <div class="main-footer__html-courtesy courtesy">
+          <a class="courtesy__link" href="">
+            Разработано
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="modal-error">
+
+      <div class="modal-error__wrapper">
+
+        <p class="modal-error__title page-title">
+          ЧТО-ТО ПОШЛО НЕ ТАК!
+        </p>
+
+        <p class="modal-error__subtitle page-subtitle">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+
+        <button class="modal-error__btn-ok blue-btn">
+          OK
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="modal-success">
+
+      <div class="modal-success__wrapper">
+
+        <p class="modal-success__title page-title">
+          Ваш отзыв отправлен!
+        </p>
+
+        <p class="modal-success__subtitle page-subtitle">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
+        </p>
+
+        <div class="modal-success_btn-wrapper">
+
+          <button class="modal-success__btn-close blue-btn">
+            OK
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
